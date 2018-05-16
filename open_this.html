@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Amethysta' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Caesar+Dressing' rel='stylesheet' type='text/css'>
+<style>
+	body {
+	  background-color: #111;
+	  color: #FFF;
+	  padding: 140px 0px 0px 0px;
+	}
+
+	h1 {
+		background-color: rgba(256,256,256,.03);
+		background-image: -webkit-linear-gradient(top, #111, #0c0c0c);
+		background-image: -moz-linear-gradient(top, #111, #0c0c0c);
+		background-image: -ms-linear-gradient(top, #111, #0c0c0c);
+		background-image: -o-linear-gradient(top, #111, #0c0c0c);
+		font-size: 2em;
+		font-family: 'Amethysta', serif;
+		text-align: center;
+		line-height: 1.4em;
+		text-transform: uppercase;
+		letter-spacing: .3em;
+		white-space:nowrap;
+	}
+
+	span {
+		color: #000;
+		font-family: 'Caesar Dressing', cursive;
+		font-size: 2em;
+		text-transform: lowercase;
+		vertical-align: middle;
+		letter-spacing: .2em;
+	}
+
+	.fire {
+		animation: animation 1s ease-in-out infinite alternate;
+		-moz-animation: animation 1s ease-in-out infinite alternate;
+		-webkit-animation: animation 1s ease-in-out infinite alternate;
+		-o-animation: animation 1s ease-in-out infinite alternate;
+	}
+
+	.burn {
+		animation: animation .65s ease-in-out infinite alternate;
+		-moz-animation: animation .65s ease-in-out infinite alternate;
+		-webkit-animation: animation .65s ease-in-out infinite alternate;
+		-o-animation: animation .65s ease-in-out infinite alternate;
+	}
+
+	@keyframes animation {
+	
+		0% {text-shadow: 0 0 20px #fefcc9,
+			10px -10px 30px #feec85,
+			-20px -20px 40px #ffae34,
+			20px -40px 50px #ec760c,
+			-20px -60px 60px #cd4606,
+			0 -80px 70px #973716,
+			10px -90px 80px #451b0e;}
+		100% {text-shadow: 0 0 20px #fefcc9,
+			10px -10px 30px #fefcc9,
+			-20px -20px 40px #feec85,
+			22px -42px 60px #ffae34,
+			-22px -58px 50px #ec760c,
+			0 -82px 80px #cd4606,
+			10px -90px 80px  #973716;}
+	}
+
+	@-moz-keyframes animation {
+	
+	0% {text-shadow: 0 0 20px #fefcc9,
+		10px -10px 30px #feec85,
+		-20px -20px 40px #ffae34,
+		20px -40px 50px #ec760c,
+		-20px -60px 60px #cd4606,
+		0 -80px 70px #973716,
+		10px -90px 80px #451b0e;}
+	100% {text-shadow: 0 0 20px #fefcc9,
+		10px -10px 30px #fefcc9,
+		-20px -20px 40px #feec85,
+		22px -42px 60px #ffae34,
+		-22px -58px 50px #ec760c,
+		0 -82px 80px #cd4606,
+		10px -90px 80px  #973716;}
+	}
+
+	@-webkit-keyframes animation {
+	
+	0% {text-shadow: 0 0 20px #fefcc9,
+	  10px -10px 30px #feec85,
+	  -20px -20px 40px #ffae34,
+	  20px -40px 50px #ec760c,
+	  -20px -60px 60px #cd4606,
+	  0 -80px 70px #973716,
+	  10px -90px 80px #451b0e;}
+	100% {text-shadow: 0 0 20px #fefcc9,
+	  10px -10px 30px #fefcc9,
+	  -20px -20px 40px #feec85,
+	  22px -42px 60px #ffae34,
+	  -22px -58px 50px #ec760c,
+	  0 -82px 80px #cd4606,
+	  10px -90px 80px  #973716;}
+	}
+
+	@-o-keyframes animation {
+	
+	0% {text-shadow: 0 0 20px #fefcc9,
+		10px -10px 30px #feec85,
+		-20px -20px 40px #ffae34,
+		20px -40px 50px #ec760c,
+		-20px -60px 60px #cd4606,
+		0 -80px 70px #973716,
+		10px -90px 80px #451b0e;}
+	100% {text-shadow: 0 0 20px #fefcc9,
+		10px -10px 30px #fefcc9,
+		-20px -20px 40px #feec85,
+		22px -42px 60px #ffae34,
+		-22px -58px 50px #ec760c,
+		0 -82px 80px #cd4606,
+		10px -90px 80px  #973716;}
+	}
+
+
+	h2 {
+		
+		font-size: 100px;
+		margin-top:200px;
+		margin-left: 30%;
+		font-family: 'Myriad-Pro', 'Myriad', helvetica, arial, sans-serif;
+		text-shadow: 2px 3px 3px #292929;
+		letter-spacing: -7px;
+		-webkit-text-stroke: 1px white;
+	
+	}
+	
+	
+
+	h2 a {
+		text-decoration: none;
+		color: #ffffff;
+		position: absolute;
+
+		-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), color-stop(50%, rgba(0,0,0,0)), to(rgba(0,0,0,1)));
+		text-shadow: 0 2px 0 #e9e9e9;
+		-webkit-transition: all .3s;
+		transition: all .3s;
+	}
+	
+	h2 a:hover {
+		color: #185a50;
+	}
+
+	h2:after {
+		color: #dbdbdb;
+		content : attr(data-title);
+	}
+
+</style>
+    <title></title>
+	
+    <script>
+
+    </script>
+</head>
+<body>
+
+<h1>Forget <span class="fire">F</span><span class="burn">i</span><span class="burn">r</span><span class="fire">e</span> lets Log Into The Matrix!</h1>
+ <h2 data-title="Matrix - Login"> <a href="ex.htm"> Matrix - Login </a> </h2>
+
+  
+</body>
+</html>
